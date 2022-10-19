@@ -8,7 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
 
     <SelfContained>true</SelfContained>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <RuntimeIdentifier>win-x86;win-x64</RuntimeIdentifier>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
