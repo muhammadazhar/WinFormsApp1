@@ -30,6 +30,7 @@
         {
             this.btnClose = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClose
@@ -51,11 +52,21 @@
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(83, 156);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 45);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Close";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 227);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnClose);
             this.Name = "Form1";
@@ -68,5 +79,6 @@
 
         private Button btnClose;
         private Button button1;
+        private Button button2;
     }
 }
