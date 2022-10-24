@@ -5,7 +5,7 @@ pipeline {
   environment {
     MSBUILD = "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\Msbuild\\Current\\Bin\\MSBuild.exe"
     CONFIG = 'Release'
-    PLATFORM = 'x86'
+    PLATFORM = 'win-x86'
   }
   
   stages {
