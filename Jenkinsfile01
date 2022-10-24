@@ -13,7 +13,7 @@ pipeline {
     stage('Update manifest version') {
       steps {
           powershell '''
-            $manifest = "WinFormsApp1\\WinForms.Packaging\\Package.appxmanifest"     
+            $manifest = "F:\\System\\Systems\\C# Test Applications\\msixdemos\\WinFormsApp1\\WinForms.Packaging\\Package.appxmanifest"     
             [xml]$xmlDoc = Get-Content $manifest
             $version = $xmlDoc.Package.Identity.Version
             $trimmedVersion = $version -replace '.[0-9]+$', '.'
@@ -24,9 +24,9 @@ pipeline {
     }
     stage('Build') {
       steps {
-        bat "dotnet restore WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj"
+        bat "dotnet restore F:\\System\\Systems\\C# Test Applications\\msixdemos\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj"
 
-        bat "\"${MSBUILD}\" WinFormsApp1\\WinFormsApp1.sln /p:Configuration=${env.CONFIG} /p:AppxBundlePlatforms=${env.PLATFORM}  /p:AppxBundle=Never /p:UapAppxPackageBuildMode=Sideloading  /p:AppxPackageSigningEnabled=false"
+        bat "\"${MSBUILD}\" F:\\System\\Systems\\C# Test Applications\\msixdemos\\WinFormsApp1\\WinFormsApp1.sln /p:Configuration=${env.CONFIG} /p:AppxBundlePlatforms=${env.PLATFORM}  /p:AppxBundle=Never /p:UapAppxPackageBuildMode=Sideloading  /p:AppxPackageSigningEnabled=false"
         
       }
       post{
