@@ -13,7 +13,7 @@ pipeline {
     stage('Update manifest version') {
       steps {
           powershell '''
-            $manifest = "F:\\System\\Systems\\C#TestApplications\\msixdemos\\WinFormsApp1\\WinForms.Packaging\\Package.appxmanifest"     
+            $manifest = "F:\\System\\Systems\\C# Test Applications\\msixdemos\\WinFormsApp1\\WinForms.Packaging\\Package.appxmanifest"     
             [xml]$xmlDoc = Get-Content $manifest
             $version = $xmlDoc.Package.Identity.Version
             $trimmedVersion = $version -replace '.[0-9]+$', '.'
