@@ -9,7 +9,8 @@
 
     <SelfContained>true</SelfContained>
     <RuntimeIdentifier>win-x86</RuntimeIdentifier>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
+    <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
 
 </Project>
