@@ -26,7 +26,7 @@ pipeline {
       steps {
         bat "dotnet restore F:\\System\\Systems\\C#TestApplications\\msixdemos\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj"
 
-        bat "\"${MSBUILD}\" F:\\System\\Systems\\C#TestApplications\\msixdemos\\WinFormsApp1\\WinFormsApp1.sln /p:AppxBundlePlatforms=${env.PLATFORM}  /p:AppxBundle=Never /p:UapAppxPackageBuildMode=Sideloading  /p:AppxPackageSigningEnabled=false"
+        bat "\"${MSBUILD}\" F:\\System\\Systems\\C#TestApplications\\msixdemos\\WinFormsApp1\\WinFormsApp1.sln /p:Configuration=${env.CONFIG} /p:AppxBundlePlatforms=${env.PLATFORM}  /p:AppxBundle=Never /p:UapAppxPackageBuildMode=Sideloading  /p:AppxPackageSigningEnabled=false"
         
       }
       post{
