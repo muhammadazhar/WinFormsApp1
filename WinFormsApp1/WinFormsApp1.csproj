@@ -8,9 +8,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
 
     <SelfContained>true</SelfContained>
-	<RuntimeIdentifier>win10-x86</RuntimeIdentifier>  
-    <PlatformTarget>x86</PlatformTarget>
-    <Platforms>AnyCPU;x86</Platforms>
+	<RuntimeIdentifiers>win-x86;win-x64;win10-x64</RuntimeIdentifiers>  
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>AnyCPU;x86;x64</Platforms>
     <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
