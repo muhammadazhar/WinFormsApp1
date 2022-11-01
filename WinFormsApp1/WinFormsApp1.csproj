@@ -8,7 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
 
     <SelfContained>true</SelfContained>
-	<RuntimeIdentifiers>win-x86;win10-x86</RuntimeIdentifiers>  
+	<RuntimeIdentifiers>win10-x86;win-x86</RuntimeIdentifiers>  
     <PlatformTarget>x86</PlatformTarget>
     <Platforms>x86</Platforms>
     <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
